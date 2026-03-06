@@ -36,7 +36,7 @@ bot = Client(
 WELCOME_IMAGE_PATH = "welcome.jpg"
 
 @bot.on_message(filters.command(["start"]))
-@force_subscribe
+
 async def start(bot: Client, m: Message):
     welcome_text = f"<b>👋 Hello {m.from_user.mention}!</b>\n\n<blockquote>📁 I am a bot for downloading files from your <b>.TXT</b> file and uploading them to Telegram.\n\n🚀 To get started, send /upload command and follow the steps.</blockquote>"
     
